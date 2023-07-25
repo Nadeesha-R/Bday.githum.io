@@ -1,2 +1,2 @@
-# Bday.githum.io
+# Bday.github.io
 None
