@@ -1,239 +1,191 @@
 body {
-    background-color: #080859;
+    background-color: #080859; /* Dark blue background */
+    margin: 0; /* Remove default margin */
 }
 
+/* Main container for the card */
 .maincontainer {
     position: absolute;
-    width:400px;
-    height:600px;
-    background:none;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%)
+    width: 400px;
+    height: 600px;
+    background: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
+/* Styles for the card */
 .thecard {
     position: relative;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 10px;
+    border-radius: 10px; /* Rounded corners */
     transform-style: preserve-3d;
-    transition: all 0.8s ease;
+    transition: all 0.8s ease; /* Smooth flip effect */
 }
 
-.thecard:hover{
-    transform:rotateY(180deg);
-}
-
-.thefront{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    backface-visibility: hidden;
-    overflow:hidden;
-    background: #e79e7c;       
-    color:rgb(0, 0, 0);
-    text-align: center; 
-}
-
-.theback{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    backface-visibility: hidden;
-    overflow:hidden;
-    background: #eadc81;
-    color:rgb(0, 0, 0);
-    text-align: left;
-    padding-left: 15px;
-    padding-top: 10px;
+/* Flip effect on hover */
+.thecard:hover {
     transform: rotateY(180deg);
 }
 
-.thefront h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 30px;
-    font-weight: bold;
-    font-size: 24px;
-    text-align: center;
-}
-
-/*Rabbit*/
-.rabbit{
+/* Front side of the card */
+.thefront {
     position: absolute;
-    width:100px;
-    height: 100px;
-    border: none;
-    padding: auto;
-    left: 0px;
-    right:0;
-    bottom: 50px;
-}
-   
-.container2 > img{
-    width:100%;
-    height:100%;
-}
-
-.theback h1{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 20px 20px;
-    font-weight: bold;
-    font-size: 18px;
-    text-align: left;
-}
-
-.theback p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 15px;
-    font-weight: normal;
-    font-size: 16px;
-    text-align: center;
-}
-
-/*Firework 1 blue*/
-.container3{
-    position: fixed;
-    left: 100px; bottom: 30px;
-    width:120px;
-    height: 120px;
-    border: none;
-    padding: auto;
-}
-
-.container3 > img{
-    width:100%;
-    height:100%;
-}
-
-/*Firework yellow*/
-.container4{
-    position: fixed;
-    left: 100px; top: 10px;
-    width:120px;
-    height: 120px;
-    border: none;
-    padding: auto;
-}
-
-.container4 > img{
-    width:100%;
-    height:100%;
-}
-
-/*Birthday Cake line art*/
-.container5{
-    position: fixed;
-    left: 290px; top: 320px;
-    width:120px;
-    height: 120px;
-    border: none;
-    padding: auto;
-}
-
-.container5 > img{
-    width:100%;
-    height:100%;
-}
-
-/*birthday cake with eyes*/
-.container6{
-    position: fixed;
-    right: 310px; top: 320px;
-    width:120px;
-    height: 120px;
-    border: none;
-    padding: auto;
-}
-
-.container6 > img{
-    width:100%;
-    height:100%;
-}
-   
-/*Firework firenew*/
-.container7{
-    position: fixed;
-    right: 100px; top: 10px;
-    width:120px;
-    height: 120px;
-    border: none;
-    padding: auto;
-}
-
-.container7 > img{
-    width:100%;
-    height:100%;
-}
-
-/*fire work small not round*/
-.container8{
-    position: fixed;
-    right: 80px; bottom: 30px;
-    width:120px;
-    height: 120px;
-    border: none;
-    padding: auto;
-}
-
-.container8 > img{
-    width:100%;
-    height:100%;
-}
-
-.container1{
-    position: relative;
-    width:100%;
-    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden; /* Hide back when showing front */
     overflow: hidden;
+    background: #e79e7c; /* Light peach background */
+    color: rgb(0, 0, 0); /* Black text */
+    text-align: center; /* Center align text */
 }
 
-.bubbles{
-    position: relative;
-    display: flex;
-    z-index:-100;
-
+/* Back side of the card */
+.theback {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden; /* Hide front when showing back */
+    overflow: hidden;
+    background: #eadc81; /* Light yellow background */
+    color: rgb(0, 0, 0); /* Black text */
+    text-align: left; /* Left align text */
+    padding-left: 15px; /* Left padding */
+    padding-top: 10px; /* Top padding */
+    transform: rotateY(180deg); /* Flip back side */
 }
 
-.bubbles span{
-    position: relative;
-    width: 30px;
-    height:30px;
-    background:rgb(230, 59, 156);
-    margin:0 4px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 10pxx rgb(143, 8, 84),
-    0 0 0 10pxx rgb(203, 49, 15),
-    0 0 0 10pxx rgb(232, 103, 47);
-    animation: animate 15s linear infinite ;
-    animation-duration: calc(10s / var(--i));
+/* Styles for the front title */
+.thefront h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
+    padding: 30px; /* Padding around the title */
+    font-weight: bold; /* Bold font */
+    font-size: 24px; /* Font size */
 }
 
-.bubbles span:nth-child(even){
-    background: #eadc81;
-    box-shadow: 0 0 0 10pxx rgb(197, 129, 216),
-    0 0 0 10pxx rgb(208, 44, 236),
-    0 0 0 10pxx rgb(45, 191, 240);
+/* Styles for the rabbit image */
+.rabbit {
+    position: absolute;
+    width: 350px; /* Set width */
+    height: 350px; /* Set height */
+    border: none; /* No border */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center adjustment */
 }
 
-
-@keyframes animate {
-    0%
-    {
-        transform:translateY(100vh) scale(0);
-    }
-    100%
-    {
-    transform:translateY(-100vh) scale(0);
-    }
+/* Rabbit image styling */
+.rabbit img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: contain; /* Maintain aspect ratio */
 }
 
+/* Styles for the back title */
+.theback h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
+    padding: 20px 20px; /* Padding */
+    font-weight: bold; /* Bold font */
+    font-size: 18px; /* Font size */
+    text-align: left; /* Left align */
+}
 
+/* Styles for paragraphs on the back */
+.theback p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Font family */
+    padding: 15px; /* Padding */
+    font-weight: normal; /* Normal font weight */
+    font-size: 16px; /* Font size */
+    text-align: center; /* Center align text */
+}
+
+/* Firework 1 (blue) */
+.container1 {
+    position: fixed;
+    left: 100px;
+    bottom: 30px;
+    width: 120px; /* Width of the firework */
+    height: 120px; /* Height of the firework */
+}
+
+.container1 > img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Firework 2 (yellow) */
+.container2 {
+    position: fixed;
+    left: 100px;
+    top: 10px;
+    width: 120px; /* Width of the firework */
+    height: 120px; /* Height of the firework */
+}
+
+.container2 > img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Birthday Cake outline */
+.container3 {
+    position: fixed;
+    left: 290px;
+    top: 320px;
+    width: 120px; /* Width of the cake */
+    height: 120px; /* Height of the cake */
+}
+
+.container3 > img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Birthday Cake with eyes */
+.container4 {
+    position: fixed;
+    right: 310px;
+    top: 320px;
+    width: 120px; /* Width of the cake */
+    height: 120px; /* Height of the cake */
+}
+
+.container4 > img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Firework 3 (firenew) */
+.container5 {
+    position: fixed;
+    right: 100px;
+    top: 10px;
+    width: 120px; /* Width of the firework */
+    height: 120px; /* Height of the firework */
+}
+
+.container5 > img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
+
+/* Firework 4 (newfire) */
+.container6 {
+    position: fixed;
+    right: 80px;
+    bottom: 30px;
+    width: 120px; /* Width of the firework */
+    height: 120px; /* Height of the firework */
+}
+
+.container6 > img {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+}
