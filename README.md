@@ -30,7 +30,9 @@ Hover over the card to see it flip and reveal the personalized message on the ba
 Enjoy the additional visual effects like bubbles and fireworks that add a festive feel to the card.
 
 **Screenshots**
+
 ![Front Side of the Card](https://github.com/nadeesharathnasinghe/Bday.github.io/blob/main/Front%20Side%20of%20the%20Card.png?raw=true)
+
 ![Back Side of the Card](https://github.com/nadeesharathnasinghe/Bday.github.io/blob/main/Back%20Side%20of%20the%20Card.png?raw=true)
 
 **Credits**
