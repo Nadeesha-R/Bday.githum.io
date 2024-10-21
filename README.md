@@ -30,8 +30,8 @@ Hover over the card to see it flip and reveal the personalized message on the ba
 Enjoy the additional visual effects like bubbles and fireworks that add a festive feel to the card.
 
 **Screenshots**
-
-
+1.Front Side of the Card - (https://github.com/user-attachments/assets/41829de9-60b4-4b22-a9fb-9885e45e6814)
+2.Back Side of the Card - (https://github.com/user-attachments/assets/2bc19d39-c7f6-4b9c-ad27-e189d1cc2970)
 
 **Credits**
 Images: Fireworks, cake, and other assets were sourced from [source/website].
